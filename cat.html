@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test</title>
+</head>
+<body>
+    <button id="downloadImage">Download Image</button>
+    <button id="saveCamPos">Save Cam Pos</button>
+    <select id="renderTargetSelect">
+        <option selected value="None">None</option>
+        <option value="FinalRender">FinalRender</option>
+        <option value="NormalsOrMask">NormalsOrMask</option>
+    </select>
+    <button id="recordButton">Record Cam Pos</button>
+    <label for="preserveNormals">Preserve Normals</label><input type="checkbox" id="preserveNormals">
+    <div id="camPosData"></div>
+    <div id="canvasTarget"></div>
+    <br>
+    <br>
+    <img id="canvasDownload">
+    <script type="module" src="./script_cat.js"></script>
+</body>
+</html>

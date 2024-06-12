@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test</title>
+</head>
+<body>
+    <button id="downloadImage">Download Image</button>
+    <button id="saveCamPos">Save Cam Pos</button>
+    <select id="renderTargetSelect">
+        <option selected value="0">None</option>
+        <option value="2">FinalRender</option>
+        <option value="1">NormalsOrMask</option>
+        <option value="3">Directions</option>
+        <option value="4">BounceData1</option>
+        <option value="5">BounceData2</option>
+        <option value="6">BounceData3</option>
+        <option value="7">BounceData4</option>
+        <option value="8">BounceData5</option>
+        <option value="9">BounceData6</option>
+        <option value="10">BounceData7</option>
+        <option value="11">FresnelRender</option>
+    </select>
+    <select id="renderTargetPositionSelect">
+        <option selected value="0">After Low Res</option>
+        <option value="1">After XBR2x</option>
+        <option value="2">After XBR4x</option>
+    </select>
+    <label for="preserveNormals">Preserve Normals</label><input type="checkbox" id="preserveNormals">
+    <button id="recordButton">Record Cam Pos</button>
+    <button id="playbackButton">Playback Cam Pos</button>
+    <div id="camPosData"></div>
+    <div id="canvasTarget"></div>
+    <br>
+    <br>
+    <a id="downloadLink">download benchmark result</a>
+    <img id="canvasDownload">
+    <script type="module" src="./script_voxel.js"></script>
+</body>
+</html>
